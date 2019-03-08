@@ -1,0 +1,175 @@
+#press{
+  //overflow-y: hidden;
+  margin-left: rem(-100);
+  background-color: #19181F;
+  margin-top: rem(250);
+  @include breakpoint(medium){
+    margin-left: rem(0);
+  }
+}
+#aricles{
+  max-width: rem(1200);
+  background-image: url("http://www.reinartdesign.com/wp/wp-content/uploads/2015/09/DSC01692-1200x1000.jpg");
+  background-size: 1200px ;
+  height: rem(800);
+  position: relative;
+  margin-left: rem(100);
+  top: rem(-150);
+  @include breakpoint(large){
+    margin-left: rem(0);
+  }
+  @include breakpoint(medium) {
+    background-size: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    margin-left: rem(0);
+  }
+  @include breakpoint(small){
+    max-width: 100%;
+    background-size: 37em;
+    height: 100%;
+  }
+}
+#carDetail{
+  background-color: $white;
+  width:25%;
+  position: absolute;
+  bottom: rem(0);
+  right: rem(0);
+  height:rem(300);
+  @include breakpoint(small){
+    width: 32%;
+  }
+}
+#carHeader{
+  font-family: 'Khand';
+  margin-left:20%;
+  text-transform: uppercase;
+  @include breakpoint(small){
+  margin-left: rem(0);
+  text-align: center;
+  }
+  p{
+    margin-bottom: rem(0);
+    @include breakpoint(small){
+     font-size: rem(12);
+    }
+  }
+  h1{
+    margin-top: rem(0);
+    font-size: rem(40);
+    @include breakpoint(medium){
+      font-size: rem(34);
+    }
+    @include breakpoint(small){
+     font-size: rem(22);
+    }
+  }
+}
+#aboutCar{
+  margin-top: rem(35);
+  background-color: $white;
+  @include breakpoint(small){
+    margin-top: rem(15);
+  }
+}
+#motorReport, #wardsauto, #behindWheel{
+  display: none;
+  font-family: 'Khand';
+  width: 60%;
+  margin-left: 20%;
+  color: #2B2A31;
+  font-size: rem(13);
+}
+#firstNews p:first-child{
+    padding-top: rem(15);
+    border-top: rem(2) solid #2B2A31;
+}
+.report{
+  width: 60%;
+  margin-left: 20%;
+  text-transform: uppercase;
+  font-size: rem(14);
+  @include breakpoint(medium){
+    font-size: rem(11);
+    font-family: 'Anton';
+  }
+  @include breakpoint(small){
+    width: 80%;
+    margin:auto;
+    padding-top: rem(25);
+    font-family: 'Khand';
+    font-size: rem(12);
+    text-align: center;
+  }
+}
+.read, .read1,.read2{
+  float: right;
+  transition: 0.3s;
+  cursor: pointer;
+  color: $gray;
+  &:hover{
+    transition: 0.3s;
+    color:$black;
+  }
+  @include breakpoint(small){
+    width: 100%;
+    text-align: center;
+    font-family: 'Anton';
+  }
+}
+#newsletter{
+  margin-left: rem(100);
+  display: block;
+  height: rem(150);
+  margin-top: rem(-50);
+  @include breakpoint(medium){
+    margin-left: rem(0);
+  }
+  @include breakpoint(small){
+    margin-top: rem(-114);
+  }
+  form{
+    height: rem(100);
+    width: 90%;
+    display: block;
+    background-color: #1F1E26;
+    margin: rem(20) auto;
+    p{
+      text-transform: uppercase;
+      color: #575562;
+      @include span(3.5 of 12);
+      font-size: rem(11);
+      letter-spacing: rem(1);
+
+    }
+    #textEnter{
+      font-size: rem(15);
+      @include span(3.5 at 4.5 of 12) ;
+      color: #575562;
+      @include breakpoint(small){
+        width: 47%;
+        font-size: rem(12);
+      }
+    }
+    p, #textEnter, #submitForm{
+      text-align: center;
+      margin-top: rem(40);
+      border: none;
+      background-color: transparent;
+    }
+    #submitForm{
+      margin-top: rem(-35);
+      font-size: rem(100);
+      color: $white;
+      @include span(3.5 at 8.5 of 12) ;
+      text-align: right;
+      @include breakpoint(small){
+        font-size: rem(50);
+        margin-top: rem(4);
+        width:18%;
+        float: right;
+      }
+    }
+  }
+}

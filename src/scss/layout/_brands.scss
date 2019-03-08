@@ -1,0 +1,72 @@
+html{
+  scroll-behavior: smooth;
+}
+#brands{
+  margin-top: rem(380);
+  font-family: 'Arial';
+  @include breakpoint(medium){
+    margin-top: rem(280);
+  }
+}
+#brandsHeader{
+  text-align: center;
+  padding-top: rem(35);
+  color: #2B2A31;
+  p{
+    text-transform: uppercase;
+    font-size: rem(15);
+  }
+  h2{
+    text-transform: uppercase;
+    font-size: rem(55);
+    font-family: 'Arial';
+    margin-top:rem(0);
+  }
+
+}
+#brandsType{
+  display: block;
+  margin: rem(40) auto;
+  table{
+    margin:auto;
+    border-collapse: collapse;
+  }
+}
+
+.tableRow{
+  border-collapse: collapse;
+  display: block;
+  margin:auto;
+  td{
+    border:rem(0.5) solid #ededed;
+    width: rem(300);
+    height:rem(250);
+    position: relative;
+    @include breakpoint(small){
+      height: rem(130);
+    }
+    p{
+      font-family: 'Arial';
+      font-size: rem(12.5);
+      position: absolute;
+      top:rem(10);
+      left: rem(10);
+      color: #d1d1d1;
+    }
+    a{
+      height:rem(100);
+      width: rem(100);
+      margin: auto;
+      -webkit-filter: grayscale(100%);
+      transition: 0.2s;
+    }
+    img{
+      display: block;
+      margin:auto;
+    }
+    a:hover{
+      transition: 0.2s;
+      -webkit-filter: grayscale(0%);
+    }
+  }
+}

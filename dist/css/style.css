@@ -1,0 +1,960 @@
+body {
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Anton'; }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+header {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0rem;
+  z-index: 55;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  height: 3.4375rem; }
+  header:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    header {
+      background-color: #19181F; } }
+
+#logo {
+  float: left; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #logo img {
+      height: 100%;
+      width: 80%; } }
+  @media (min-width: 640px) and (max-width: 940px) {
+    #logo img {
+      height: 8.75rem; } }
+
+#headerIcon {
+  cursor: pointer;
+  display: none;
+  background: url("https://image.flaticon.com/icons/png/128/148/148795.png");
+  background-size: 2.1875rem;
+  width: 2.1875rem;
+  height: 2.1875rem; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #headerIcon {
+      display: inline-block;
+      margin-right: 0.625rem;
+      margin-top: 0.625rem; } }
+
+#menu {
+  float: right; }
+
+#menu ul {
+  display: block; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #menu ul {
+      display: none;
+      position: absolute;
+      background-color: #19181F;
+      margin-top: 0rem;
+      right: 0rem;
+      border: medium none;
+      width: 46%;
+      padding: 0rem 0.625rem; } }
+
+#menu ul li {
+  display: inline;
+  margin-right: 1.25rem; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #menu ul li {
+      display: block;
+      text-align: center;
+      width: 100%;
+      padding: 10px 0;
+      margin: 0; } }
+  #menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+    color: #000;
+    transition: 0.3s; }
+    @media (min-width: 320px) and (max-width: 639px) {
+      #menu ul li a {
+        color: #fff; } }
+
+ul li a:hover {
+  color: #808080;
+  transition: 0.3s; }
+
+.mySlides img {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+
+@media (min-width: 320px) and (max-width: 639px) {
+  #orbit {
+    display: none; } }
+
+@media (min-width: 640px) and (max-width: 940px) {
+  .contentSlider {
+    position: relative; } }
+
+.mySlides img {
+  float: none;
+  margin-left: -85;
+  width: 107%;
+  margin-top: 3.4375rem; }
+
+.slideText {
+  margin-top: -30rem;
+  width: 30%; }
+  @media (min-width: 640px) and (max-width: 940px) {
+    .slideText {
+      margin-left: 3.125rem;
+      width: 38%; } }
+  .slideText h1 {
+    color: #fff;
+    font-size: 4.6875rem; }
+    @media (min-width: 640px) and (max-width: 940px) {
+      .slideText h1 {
+        font-size: 2.5rem;
+        margin-top: 12.5rem; } }
+  .slideText p {
+    color: #fff;
+    font-size: 1.125rem; }
+
+.slideButton {
+  margin-top: -3.125rem;
+  position: relative;
+  float: right;
+  background-color: #fff; }
+  @media (min-width: 1200px) {
+    .slideButton {
+      width: 10%; } }
+  @media (min-width: 640px) and (max-width: 940px) {
+    .slideButton {
+      right: 0rem;
+      width: 20%;
+      bottom: -5.625rem;
+      position: absolute; } }
+  @media screen and (min-width: 59em) and (max-width: 1200px) {
+    .slideButton {
+      margin-top: -4.375rem;
+      width: 14%; } }
+
+.mySlides {
+  display: none; }
+
+.num {
+  float: left;
+  margin-left: 1.5625rem; }
+
+.nextSlide {
+  float: right;
+  border: none;
+  font-size: 3.125rem;
+  background-color: transparent;
+  margin-right: 0.9375rem;
+  margin-top: -1rem;
+  cursor: pointer; }
+  @media (min-width: 640px) and (max-width: 940px) {
+    .nextSlide {
+      margin-right: 1.875rem; } }
+
+#carDescription {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Khand';
+  height: 31.25rem; }
+  #carDescription:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #carDescription {
+      height: 46.875rem; } }
+
+#descriptionHeader {
+  padding-top: 6.25rem;
+  width: 57.62712%;
+  margin-left: 4.23729%; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #descriptionHeader {
+      margin: auto;
+      text-align: center; } }
+  #descriptionHeader h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-top: 0rem; }
+    @media (min-width: 320px) and (max-width: 639px) {
+      #descriptionHeader h1 {
+        font-size: 2rem;
+        width: 100%; } }
+  #descriptionHeader p {
+    margin-bottom: 0rem; }
+
+#descriptionImg {
+  float: left;
+  width: 40.67797%;
+  float: left;
+  margin-right: 1.69492%; }
+  #descriptionImg img {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #descriptionImg {
+      float: none;
+      width: 80%;
+      margin: auto; } }
+
+#descriptionText {
+  float: right;
+  width: 57.62712%;
+  float: right;
+  margin-right: 0; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #descriptionText {
+      float: none;
+      margin-top: 2.5rem;
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
+  #descriptionText p {
+    width: 21.875rem; }
+    @media (min-width: 640px) and (max-width: 940px) {
+      #descriptionText p {
+        width: 83.05085%;
+        float: left;
+        margin-right: 1.69492%;
+        margin-top: 0rem;
+        padding-left: 1.25rem; } }
+    @media (min-width: 320px) and (max-width: 639px) {
+      #descriptionText p {
+        width: 80%;
+        margin-left: 10%;
+        display: block;
+        text-align: center;
+        margin: auto; } }
+
+#stbSystem {
+  background-color: #19181F;
+  margin-left: -6.4%;
+  margin-right: -6.4%;
+  margin-top: 14.375rem; }
+  @media (min-width: 640px) and (max-width: 940px) {
+    #stbSystem {
+      margin-left: 0rem;
+      margin-right: 0rem; } }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #stbSystem {
+      margin-top: 9.375rem; } }
+
+#stbSystemContent {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+#imageBetween {
+  background-image: url("http://blog.clintdavis.com/wp-content/uploads/2016/12/161220_chevrolet_performance_07.jpg");
+  margin-left: auto;
+  width: 100%;
+  height: 62.5rem;
+  top: -9.375rem;
+  position: relative; }
+  @media screen and (min-width: 59em) and (max-width: 1200px) {
+    #imageBetween {
+      overflow-x: visible; } }
+  @media (min-width: 1200px) {
+    #imageBetween {
+      overflow-x: visible; } }
+  @media (min-width: 640px) and (max-width: 940px) {
+    #imageBetween {
+      background-size: 100%;
+      height: 31.25rem;
+      margin-left: 0rem; } }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #imageBetween {
+      overflow-x: visible;
+      background-size: 100%;
+      margin-top: 0rem;
+      background-repeat: no-repeat;
+      height: 72%; } }
+
+#textOnImage {
+  top: 7.1875rem;
+  position: absolute;
+  left: 36%;
+  width: 25rem;
+  padding-left: 1.25rem;
+  border-left: 0.125rem solid #4B4B4E; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #textOnImage {
+      width: 40%;
+      top: 1.875rem;
+      position: relative;
+      padding-left: 1.25rem;
+      border-left: 2px solid black; } }
+  @media (min-width: 640px) and (max-width: 940px) {
+    #textOnImage {
+      top: 3.125rem;
+      left: 29%; } }
+  #textOnImage p {
+    text-transform: uppercase;
+    color: #4b4b4b;
+    margin-top: 0rem; }
+    @media (min-width: 320px) and (max-width: 639px) {
+      #textOnImage p {
+        padding-top: 0rem;
+        font-size: 0.875rem; } }
+  #textOnImage h1 {
+    margin-bottom: 0rem;
+    font-family: 'Khand'; }
+    @media (min-width: 640px) and (max-width: 940px) {
+      #textOnImage h1 {
+        font-size: 1.625rem; } }
+    @media (min-width: 320px) and (max-width: 639px) {
+      #textOnImage h1 {
+        font-size: 1.125rem;
+        color: #ffffff; } }
+
+#videoBetween {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-left: 4.23729%;
+  margin-top: -15.625rem;
+  position: relative; }
+  @media screen and (min-width: 59em) and (max-width: 1200px) {
+    #videoBetween {
+      left: 8%; } }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #videoBetween {
+      left: 20%;
+      margin-top: -12.5rem; } }
+  #videoBetween video {
+    width: 12.5rem;
+    height: 12.5rem; }
+    @media (min-width: 320px) and (max-width: 639px) {
+      #videoBetween video {
+        width: 7.8125rem;
+        height: 7.8125rem; } }
+  #videoBetween a {
+    top: -6.875rem;
+    left: 0.9375rem;
+    position: relative;
+    text-decoration: none;
+    color: #CBC9C9;
+    transition: 0.5s; }
+    @media (min-width: 320px) and (max-width: 639px) {
+      #videoBetween a {
+        font-size: 0.8125rem;
+        top: -5.625rem; } }
+    #videoBetween a:hover {
+      color: #fff;
+      transition: 0.5s; }
+
+.systemPart {
+  border-top: 0.0625rem solid #25242A;
+  border-right: 0.0625rem solid #25242A;
+  border-bottom: 0.0625rem solid #25242A;
+  height: 25rem;
+  margin-top: -21.875rem; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    .systemPart {
+      margin-top: -1.875rem;
+      border: none; } }
+  .systemPart h1 {
+    font-size: 17rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    height: 25rem;
+    opacity: 0.1;
+    color: #808080;
+    text-align: center; }
+
+.systemPart:first-child {
+  border-left: 0.0625rem solid #25242A; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    .systemPart:first-child {
+      border-left: none; } }
+
+#systemTypes table {
+  display: block;
+  margin: auto;
+  width: 56.25rem; }
+  @media (min-width: 640px) and (max-width: 940px) {
+    #systemTypes table {
+      width: 100%; } }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #systemTypes table {
+      margin: auto;
+      width: 60%; } }
+  #systemTypes table tbody {
+    display: block;
+    margin: auto; }
+
+@media (min-width: 320px) and (max-width: 639px) {
+  #systemTypes table tr {
+    margin: auto;
+    width: 100%;
+    text-align: center; } }
+
+#systemTypes table tr td {
+  width: 18.75rem;
+  height: 56.25rem; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #systemTypes table tr td {
+      display: list-item;
+      height: 18.75rem;
+      width: 100%;
+      list-style-type: none; } }
+
+.systemtext {
+  font-family: 'Khand';
+  margin-top: -17rem;
+  padding: 0rem 3.75rem; }
+  .systemtext h5, .systemtext p {
+    color: #fff; }
+  .systemtext h5 {
+    font-size: 1.875rem;
+    margin: 0rem; }
+
+#systemDescription {
+  font-family: 'Khand';
+  margin-bottom: 6.25rem;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: -30.625rem; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #systemDescription {
+      margin: 0rem; } }
+  #systemDescription p {
+    color: #464450; }
+
+#descriptionLeft {
+  width: 30%;
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-left: 12.71186%;
+  text-align: center; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #descriptionLeft {
+      float: none;
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      font-size: 2.5rem; } }
+  #descriptionLeft p {
+    color: #464450; }
+    @media (min-width: 320px) and (max-width: 639px) {
+      #descriptionLeft p {
+        margin-bottom: 0rem; } }
+    #descriptionLeft p span {
+      font-size: 2rem; }
+
+#descriptionRight {
+  width: 40%;
+  width: 40.67797%;
+  float: left;
+  margin-right: 1.69492%; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #descriptionRight {
+      width: 65%;
+      margin: auto;
+      display: block;
+      float: none;
+      text-align: center; } }
+
+#systemTypes {
+  padding-bottom: 9.375rem; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #systemTypes {
+      padding-bottom: 0rem; } }
+
+#journey {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  @media (min-width: 640px) and (max-width: 940px) {
+    #journey {
+      position: relative; } }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #journey {
+      padding-bottom: 3.125rem;
+      border-bottom: 1px dashed #AAAAAB;
+      margin-bottom: 3.75rem; } }
+
+#journeyLeftPart {
+  float: left;
+  margin-top: -15.625rem;
+  left: 0rem;
+  position: relative;
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%; }
+  @media screen and (min-width: 59em) and (max-width: 1200px) {
+    #journeyLeftPart {
+      width: 60%; } }
+  @media (min-width: 640px) and (max-width: 940px) {
+    #journeyLeftPart {
+      max-width: 55%;
+      margin-top: -11.875rem; } }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #journeyLeftPart {
+      float: none;
+      margin-top: 0rem;
+      margin: auto; } }
+  #journeyLeftPart p {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    color: #fff;
+    text-align: center; }
+    @media (min-width: 320px) and (max-width: 639px) {
+      #journeyLeftPart p {
+        display: none; } }
+    #journeyLeftPart p span {
+      color: #504E5A; }
+  #journeyLeftPart img {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+    @media screen and (min-width: 59em) and (max-width: 1200px) {
+      #journeyLeftPart img {
+        height: 30.8125rem; } }
+    @media (min-width: 320px) and (max-width: 639px) {
+      #journeyLeftPart img {
+        padding-bottom: 0.9375rem; } }
+
+#journeyRightPart {
+  float: right;
+  margin-top: -0.5rem;
+  width: 30%; }
+  @media screen and (min-width: 59em) and (max-width: 1200px) {
+    #journeyRightPart {
+      width: 30%;
+      margin-right: 4%; } }
+  @media (min-width: 640px) and (max-width: 940px) {
+    #journeyRightPart {
+      position: absolute;
+      right: 7%;
+      bottom: 0rem; } }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #journeyRightPart {
+      float: none;
+      margin-top: 0.9375rem;
+      text-align: center;
+      width: 80%;
+      margin: auto; } }
+  #journeyRightPart h5 {
+    color: #26252B;
+    text-transform: uppercase; }
+    @media (min-width: 640px) and (max-width: 940px) {
+      #journeyRightPart h5 {
+        text-align: center; } }
+    @media (min-width: 320px) and (max-width: 639px) {
+      #journeyRightPart h5 {
+        margin-top: 0.9375rem; } }
+  #journeyRightPart p {
+    color: #AAAAAB;
+    font-size: 0.71875rem; }
+    @media (min-width: 320px) and (max-width: 639px) {
+      #journeyRightPart p {
+        margin-top: 0rem; } }
+    @media (min-width: 640px) and (max-width: 940px) {
+      #journeyRightPart p {
+        margin-top: 1.25rem;
+        text-align: center; } }
+  #journeyRightPart img {
+    height: 10.625rem; }
+    @media (min-width: 640px) and (max-width: 940px) {
+      #journeyRightPart img {
+        width: 100%;
+        height: 40.67797%; } }
+    @media (min-width: 320px) and (max-width: 639px) {
+      #journeyRightPart img {
+        display: none; } }
+
+#brands {
+  margin-top: 23.75rem;
+  font-family: 'Arial'; }
+  @media (min-width: 640px) and (max-width: 940px) {
+    #brands {
+      margin-top: 17.5rem; } }
+
+#brandsHeader {
+  text-align: center;
+  padding-top: 2.1875rem;
+  color: #2B2A31; }
+  #brandsHeader p {
+    text-transform: uppercase;
+    font-size: 0.9375rem; }
+  #brandsHeader h2 {
+    text-transform: uppercase;
+    font-size: 3.4375rem;
+    font-family: 'arial';
+    margin-top: 0rem; }
+
+#brandsType {
+  display: block;
+  margin: 2.5rem auto; }
+  #brandsType table {
+    margin: auto;
+    border-collapse: collapse; }
+
+.tableRow {
+  border-collapse: collapse;
+  display: block;
+  margin: auto; }
+  .tableRow td {
+    border: 0.03125rem solid #ededed;
+    width: 18.75rem;
+    height: 15.625rem;
+    position: relative; }
+    @media (min-width: 320px) and (max-width: 639px) {
+      .tableRow td {
+        height: 8.125rem; } }
+    .tableRow td p {
+      font-family: 'Arial';
+      font-size: 0.78125rem;
+      position: absolute;
+      top: 0.625rem;
+      left: 0.625rem;
+      color: #d1d1d1; }
+    .tableRow td a {
+      height: 6.25rem;
+      width: 6.25rem;
+      margin: auto;
+      -webkit-filter: grayscale(100%);
+      transition: 0.2s; }
+    .tableRow td img {
+      display: block;
+      margin: auto; }
+    .tableRow td a:hover {
+      transition: 0.2s;
+      -webkit-filter: grayscale(0%); }
+
+#press {
+  margin-left: -6.25rem;
+  background-color: #19181F;
+  margin-top: 15.625rem; }
+  @media (min-width: 640px) and (max-width: 940px) {
+    #press {
+      margin-left: 0rem; } }
+
+#aricles {
+  max-width: 75rem;
+  background-image: url("http://www.reinartdesign.com/wp/wp-content/uploads/2015/09/DSC01692-1200x1000.jpg");
+  background-size: 1200px;
+  height: 50rem;
+  position: relative;
+  margin-left: 6.25rem;
+  top: -9.375rem; }
+  @media screen and (min-width: 59em) and (max-width: 1200px) {
+    #aricles {
+      margin-left: 0rem; } }
+  @media (min-width: 640px) and (max-width: 940px) {
+    #aricles {
+      background-size: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      margin-left: 0rem; } }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #aricles {
+      max-width: 100%;
+      background-size: 37em;
+      height: 100%; } }
+
+#carDetail {
+  background-color: #fff;
+  width: 25%;
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+  height: 18.75rem; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #carDetail {
+      width: 32%; } }
+
+#carHeader {
+  font-family: 'Khand';
+  margin-left: 20%;
+  text-transform: uppercase; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #carHeader {
+      margin-left: 0rem;
+      text-align: center; } }
+  #carHeader p {
+    margin-bottom: 0rem; }
+    @media (min-width: 320px) and (max-width: 639px) {
+      #carHeader p {
+        font-size: 0.75rem; } }
+  #carHeader h1 {
+    margin-top: 0rem;
+    font-size: 2.5rem; }
+    @media (min-width: 640px) and (max-width: 940px) {
+      #carHeader h1 {
+        font-size: 2.125rem; } }
+    @media (min-width: 320px) and (max-width: 639px) {
+      #carHeader h1 {
+        font-size: 1.375rem; } }
+
+#aboutCar {
+  margin-top: 2.1875rem;
+  background-color: #fff; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #aboutCar {
+      margin-top: 0.9375rem; } }
+
+#motorReport, #wardsauto, #behindWheel {
+  display: none;
+  font-family: 'Khand';
+  width: 60%;
+  margin-left: 20%;
+  color: #2B2A31;
+  font-size: 0.8125rem; }
+
+#firstNews p:first-child {
+  padding-top: 0.9375rem;
+  border-top: 0.125rem solid #2B2A31; }
+
+.report {
+  width: 60%;
+  margin-left: 20%;
+  text-transform: uppercase;
+  font-size: 0.875rem; }
+  @media (min-width: 640px) and (max-width: 940px) {
+    .report {
+      font-size: 0.6875rem;
+      font-family: 'Anton'; } }
+  @media (min-width: 320px) and (max-width: 639px) {
+    .report {
+      width: 80%;
+      margin: auto;
+      padding-top: 1.5625rem;
+      font-family: 'Khand';
+      font-size: 0.75rem;
+      text-align: center; } }
+
+.read, .read1, .read2 {
+  float: right;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #808080; }
+  .read:hover, .read1:hover, .read2:hover {
+    transition: 0.3s;
+    color: #000; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    .read, .read1, .read2 {
+      width: 100%;
+      text-align: center;
+      font-family: 'Anton'; } }
+
+#newsletter {
+  margin-left: 6.25rem;
+  display: block;
+  height: 9.375rem;
+  margin-top: -3.125rem; }
+  @media (min-width: 640px) and (max-width: 940px) {
+    #newsletter {
+      margin-left: 0rem; } }
+  @media (min-width: 320px) and (max-width: 639px) {
+    #newsletter {
+      margin-top: -7.125rem; } }
+  #newsletter form {
+    height: 6.25rem;
+    width: 90%;
+    display: block;
+    background-color: #1F1E26;
+    margin: 1.25rem auto; }
+    #newsletter form p {
+      text-transform: uppercase;
+      color: #575562;
+      width: 27.9661%;
+      float: left;
+      margin-right: 1.69492%;
+      font-size: 0.6875rem;
+      letter-spacing: 0.0625rem; }
+    #newsletter form #textEnter {
+      font-size: 0.9375rem;
+      width: 27.9661%;
+      float: left;
+      margin-right: 1.69492%;
+      color: #575562; }
+      @media (min-width: 320px) and (max-width: 639px) {
+        #newsletter form #textEnter {
+          width: 47%;
+          font-size: 0.75rem; } }
+    #newsletter form p, #newsletter form #textEnter, #newsletter form #submitForm {
+      text-align: center;
+      margin-top: 2.5rem;
+      border: none;
+      background-color: transparent; }
+    #newsletter form #submitForm {
+      margin-top: -2.1875rem;
+      font-size: 6.25rem;
+      color: #fff;
+      width: 27.9661%;
+      float: left;
+      margin-right: 1.69492%;
+      text-align: right; }
+      @media (min-width: 320px) and (max-width: 639px) {
+        #newsletter form #submitForm {
+          font-size: 3.125rem;
+          margin-top: 0.25rem;
+          width: 18%;
+          float: right; } }
+
+@media (min-width: 320px) and (max-width: 639px) {
+  body {
+    overflow-x: hidden; } }
+
+@media screen and (min-width: 59em) and (max-width: 1200px) {
+  body {
+    overflow-x: hidden; } }
+
+@media (min-width: 1200px) {
+  body {
+    overflow-x: hidden; } }
+
+#footerItem {
+  height: 0.9375rem; }
+  #footerItem li {
+    list-style-type: none;
+    width: 17.79661%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 4.23729%;
+    margin-left: 0.625rem;
+    height: 3.125rem; }
+    @media (min-width: 320px) and (max-width: 639px) {
+      #footerItem li {
+        margin-left: 0rem;
+        margin-right: 0rem;
+        width: 25%; } }
+    #footerItem li a {
+      text-decoration: none;
+      font-size: 0.75rem; }
+    #footerItem li p {
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      margin-top: 0rem; }
+    @media (min-width: 640px) and (max-width: 940px) {
+      #footerItem li {
+        width: 11.01695%;
+        float: left;
+        margin-right: 1.69492%;
+        margin-left: 1.25rem; } }
+  #footerItem .socialNetwork {
+    width: 40.67797%;
+    float: left;
+    margin-right: 1.69492%;
+    float: right;
+    margin-right: 0rem; }
+    @media (min-width: 640px) and (max-width: 940px) {
+      #footerItem .socialNetwork {
+        width: 49.15254%;
+        float: left;
+        margin-right: 1.69492%;
+        float: right; } }
+    @media (min-width: 320px) and (max-width: 639px) {
+      #footerItem .socialNetwork {
+        width: 94%;
+        margin-left: 0rem;
+        float: left; } }
+
+.footerMenu {
+  padding: 0rem;
+  height: 3.125rem; }
+  @media (min-width: 640px) and (max-width: 940px) {
+    .footerMenu {
+      margin-left: 1.25rem; } }
+  .footerMenu li {
+    width: 6.875rem;
+    display: inline;
+    margin: 0rem;
+    text-align: right; }
+    @media screen and (min-width: 59em) and (max-width: 1200px) {
+      .footerMenu li {
+        width: 21%; } }
+    @media (min-width: 640px) and (max-width: 940px) {
+      .footerMenu li {
+        width: 19%;
+        text-align: center; } }
+    @media (min-width: 320px) and (max-width: 639px) {
+      .footerMenu li {
+        text-align: center; } }
+
+.facebook a {
+  color: #19181F;
+  transition: 0.4s; }
+
+.facebook :hover {
+  color: #3C5A99;
+  transition: 0.4s; }
+
+.youtube a {
+  color: #19181F;
+  transition: 0.4s; }
+
+.youtube :hover {
+  color: #ff0000;
+  transition: 0.4s; }
+
+.instagram a {
+  color: #19181F;
+  transition: 0.4s; }
+
+.instagram :hover {
+  color: #2F6283;
+  transition: 0.4s; }
+
+.twitter a {
+  color: #19181F;
+  transition: 0.4s; }
+
+.twitter :hover {
+  color: #00ACEE;
+  transition: 0.4s; }
+
+@media (min-width: 320px) and (max-width: 639px) {
+  .facebook, .twitter, .youtube, .instagram {
+    text-align: left; } }
+
+#footerItem .mail {
+  float: right;
+  margin-right: 2.1875rem;
+  text-align: right; }
+  #footerItem .mail a {
+    color: #19181F; }
+
+.socialNetwork:first-child {
+  display: none; }
+  @media (min-width: 320px) and (max-width: 639px) {
+    .socialNetwork:first-child {
+      display: inline; } }
+
+@media (min-width: 320px) and (max-width: 639px) {
+  .socialNetwork:last-child {
+    display: none; } }
+
+@media (min-width: 640px) and (max-width: 940px) {
+  #footerItem .cartest {
+    width: 12%; } }
+
+#footerItem .cartest p {
+  padding-top: 0.3125rem; }

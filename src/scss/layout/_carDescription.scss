@@ -1,0 +1,65 @@
+#carDescription{
+  @include container(1200px);
+  font-family: 'Khand';
+  height: rem(500);
+  @include breakpoint(small){
+    height: rem(750);
+  }
+}
+#descriptionHeader{
+  padding-top: rem(100);
+  width: span(7 of 12);
+  @include push(0.5);
+  @include breakpoint(small){
+    margin: auto;
+    text-align: center;
+  }
+  h1{
+    text-transform: uppercase;
+    font-size: rem(48);
+    margin-top:rem(0);
+    @include breakpoint(small){
+      font-size: rem(32);
+      width: 100%;
+    }
+  }
+  p{
+    margin-bottom: rem(0);
+  }
+}
+#descriptionImg{
+  float: left;
+  @include span(5 of 12);
+  img{
+    @include span(12)
+  }
+  @include breakpoint(small){
+    float: none;
+    width: 80%;
+    margin: auto;
+  }
+}
+#descriptionText {
+  float: right;
+  @include span(7 at 6 of 12);
+  @include breakpoint(small){
+    float: none;
+    margin-top: rem(40);
+    @include span(12 of 12);
+  }
+  p {
+    width: rem(350);
+    @include breakpoint(medium){
+      @include span(10);
+      margin-top: rem(0);
+      padding-left: rem(20);
+    }
+    @include breakpoint(small){
+      width: 80%;
+      margin-left: 10%;
+      display: block;
+      text-align: center;
+      margin:auto;
+    }
+  }
+}

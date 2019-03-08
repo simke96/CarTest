@@ -1,0 +1,29 @@
+@mixin breakpoint($point) {
+   @if $point == xlarge {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @if $point == large {
+    @media screen and (min-width: 59em) and (max-width: 1200px) {
+      @content;
+    }
+  } @else if $point == medium {
+    @media (min-width: 640px) and (max-width: 940px){
+      @content;
+    }
+  } @else if $point == small {
+    @media (min-width: 320px) and (max-width: 639px) {
+      @content;
+    }
+  }};
+
+@mixin social($color, $transition, $color1, $transition1){
+  a{
+    color: $color;
+    transition: $transition;
+  }
+  :hover{
+    color: $color1;
+    transition: $transition1;
+  }
+}

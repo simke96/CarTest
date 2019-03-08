@@ -1,0 +1,353 @@
+#stbSystem{
+  background-color: #19181F;
+  margin-left: -6.4%;
+  margin-right: -6.4%;
+  margin-top: rem(230);
+  @include  breakpoint(medium) {
+    margin-left: rem(0);
+    margin-right: rem(0);
+  }
+    @include breakpoint(small){
+      margin-top: rem(150);
+
+  }
+}
+#stbSystemContent{
+  max-width:rem(1200);
+  margin-left: auto;
+  margin-right: auto;
+}
+#imageBetween {
+  background-image: url("http://blog.clintdavis.com/wp-content/uploads/2016/12/161220_chevrolet_performance_07.jpg");
+  margin-left: auto;
+  width: 100%;
+  height: rem(1000);
+  top: rem(-150);
+  position: relative;
+  @include breakpoint(large){
+    overflow-x: visible;
+  }
+  @include breakpoint(xlarge){
+    overflow-x: visible;
+  }
+  @include breakpoint(medium) {
+    background-size: 100%;
+    height: rem(500);
+    margin-left: rem(0);
+  }
+  @include breakpoint(small){
+    overflow-x: visible;
+    background-size: 100%;
+    //height:90%;
+    margin-top: rem(0);
+    background-repeat: no-repeat;
+    height: 72%;
+  }
+}
+#textOnImage{
+  top: 7.1875rem;
+  position: absolute;
+  left: 36%;
+  width: rem(400);
+  padding-left: rem(20);
+  border-left: rem(2) solid #4B4B4E;
+  @include breakpoint(small) {
+  width: 40%;
+    top: rem(30);
+    position: relative;
+    padding-left: rem(20);
+    border-left: 2px solid black ;
+  }
+  @include breakpoint(medium){
+    top: rem(50);
+    left: 29%;
+  }
+    p{
+    text-transform: uppercase;
+    color: #4b4b4b;
+      margin-top: rem(0);
+
+    @include breakpoint(small){
+      padding-top: rem(0);
+      font-size: rem(14);
+    }
+  }
+  h1{
+    margin-bottom: rem(0);
+    font-family: 'Khand';
+    @include breakpoint(medium){
+     font-size: rem(26);
+    }
+    @include breakpoint(small) {
+    font-size: rem(18);
+      color: #ffffff;
+    }
+    }
+}
+#videoBetween{
+  @include span(6 of 12);
+  @include push(0.5);
+  margin-top: rem(-250);
+  position: relative;
+  @include breakpoint(large){
+    left:8%
+  }
+  @include breakpoint(small) {
+    left:20%;
+    margin-top: rem(-200);
+  }
+    video{
+    width: rem(200);
+    height: rem(200);
+    @include breakpoint(small) {
+    width: rem(125);
+      height: rem(125);
+    }
+    }
+  a{
+    top: rem(-110);
+    left: rem(15);
+    position: relative;
+    text-decoration: none;
+    color: #CBC9C9;
+    transition:0.5s;
+    @include breakpoint(small){
+      font-size: rem(13);
+      top: rem(-90)
+    }
+    &:hover{
+      color:$white;
+      transition:0.5s;
+    }
+  }
+}
+.systemPart{
+  border-top:rem(1) solid #25242A;
+  border-right:rem(1) solid #25242A;
+  border-bottom:rem(1) solid #25242A;
+  height: rem(400);
+  margin-top: rem(-350);
+  @include breakpoint(small){
+    margin-top: rem(-30);
+    border: none;
+  }
+  h1{
+    font-size: rem(272);
+    margin-bottom: rem(0);
+    margin-top: rem(0);
+    height: rem(400);
+    opacity: 0.1;
+    color: $gray;
+    text-align: center ;
+  }
+}
+.systemPart:first-child{
+  border-left:rem(1) solid #25242A;
+  @include breakpoint(small){
+    border-left: none;
+  }
+}
+#systemTypes table {
+    display: block;
+    margin: auto;
+    width: rem(900);
+    @include breakpoint(medium) {
+      width: 100%;
+    }
+    @include breakpoint(small) {
+      margin: auto;
+      width: 60%;
+    }
+    tbody {
+      display: block;
+      margin: auto;
+    }
+  }
+  #systemTypes table tr{
+    @include breakpoint(small){
+      margin: auto;
+      width: 100%;
+      text-align: center}
+
+    td{
+      width: rem(300);
+      height: rem(900);
+      @include breakpoint(small){
+        display: list-item;
+        height: rem(300);
+        width: 100%;
+        list-style-type: none;
+      }
+    }
+  }
+
+  .systemtext{
+    font-family: 'Khand';
+    margin-top: rem(-272);
+    padding: rem(0) rem(60);
+    h5,p{
+      color: $white;
+    }
+    h5{
+      font-size: rem(30);
+      margin: rem(0);
+    }
+  }
+  #systemDescription{
+    font-family: 'Khand';
+    margin-bottom: rem(100);
+    @include span(12 of 12);
+    margin-top: rem(-490);
+    @include breakpoint(small){
+      margin: rem(0);
+    }
+    p{
+      color: #464450;
+    }
+  }
+  #descriptionLeft{
+    @include breakpoint(small){
+      float: none;
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      font-size: rem(40);
+    }
+    width:30%;
+    @include span(4 of 12);
+    @include push(1.5);
+    text-align: center;
+    p{
+      color: #464450;
+      @include breakpoint(small){
+        margin-bottom: rem(0);
+      }
+      span{
+        font-size: rem(32);
+      }
+    }
+  }
+  #descriptionRight{
+    @include breakpoint(small){
+      width: 65%;
+      margin: auto;
+      display: block;
+      float: none;
+      text-align: center;
+    }
+    width: 40%;
+    @include span(5 at 5 of 12);
+  }
+  #systemTypes{
+    padding-bottom: rem(150);
+    @include breakpoint(small){
+      padding-bottom: rem(0);
+    }
+  }
+  #journey{
+    @include span(12 of 12);
+    @include breakpoint(medium){
+      position: relative;
+    }
+    @include breakpoint(small){
+      padding-bottom: rem(50);
+      border-bottom: 1px dashed #AAAAAB;
+      margin-bottom: rem(60);
+    }
+
+  }
+  #journeyLeftPart{
+    float: left;
+    margin-top: rem(-250);
+    left: rem(0);
+    position: relative;
+    @include span(8 of 12);
+    @include breakpoint(large){
+      width:60%;
+    }
+    @include breakpoint(medium){
+      max-width: 55%;
+      margin-top: rem(-190);
+    }
+    @include breakpoint(small){
+      float: none;
+      margin-top: rem(0);
+      //height: rem(220);
+      margin:auto;
+    }
+    p{
+      @include breakpoint(small){
+        display: none;
+      }
+      text-transform: uppercase;
+      font-size: rem(14);
+      color: $white;
+      text-align: center;
+      span{
+        color:#504E5A;
+      }
+    }
+    img{
+      @include breakpoint(large){
+        height: rem(493);
+      }
+      @include span(12 of 12);
+      @include breakpoint(small){
+        padding-bottom: rem(15);
+      }
+    }
+  }
+  #journeyRightPart{
+    @include breakpoint(large){
+      width:30%;
+      margin-right: 4%;
+    }
+    @include breakpoint(medium){
+      position: absolute;
+      right: 7%;
+      bottom: rem(0);
+    }
+    @include breakpoint(small){
+      float: none;
+      margin-top: rem(15);
+      text-align: center;
+      width: 80%;
+      margin: auto;
+    }
+    float: right;
+    margin-top: rem(-8);;
+    width:30%;
+    h5{
+      @include breakpoint(medium){
+        text-align: center;
+      }
+      @include breakpoint(small){
+        margin-top: rem(15)
+      }
+      color: #26252B;
+      text-transform: uppercase;
+    }
+    p{
+      @include breakpoint(small){
+        margin-top: rem(0);
+      }
+      @include breakpoint(medium){
+        margin-top: rem(20);
+        text-align: center;
+      }
+      color:#AAAAAB;
+      font-size: rem(11.5);
+      //font-family: 'Khand';
+    }
+    img{
+      height:rem(170);
+      @include breakpoint(medium){
+        width: 100%;
+        height: span(5);
+      };
+      @include breakpoint(small){
+        display: none;
+      }
+    }
+
+  }

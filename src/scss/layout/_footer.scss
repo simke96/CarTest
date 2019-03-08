@@ -1,0 +1,120 @@
+body{
+  @include breakpoint(small){
+    overflow-x: hidden;
+  }
+  @include breakpoint(large){
+    overflow-x: hidden;
+  }
+  @include breakpoint(xlarge){
+    overflow-x: hidden;
+  }
+}
+#footerItem {
+  height: rem(15);
+  li{
+    @include breakpoint(small){
+      margin-left: rem(0);
+      margin-right: rem(0);
+      width: 25%;
+    }
+    a {
+      text-decoration: none;
+      font-size: rem(12);
+    }
+    p{
+      text-transform: uppercase;
+      font-size: rem(12);
+      margin-top: rem(0);
+    }
+    list-style-type: none;
+    @include span(2.3);
+    @include push(0.5);
+    margin-left: rem(10);
+    height: rem(50);
+    @include breakpoint(medium){
+      @include span(1.5);
+      margin-left: rem(20);
+    }
+  }
+  .socialNetwork{
+    @include span(5);
+    float: right;
+    margin-right:rem(0);
+    @include breakpoint(medium){
+      @include span(6);
+      float: right;
+    }
+    @include breakpoint(small){
+      width: 94%;
+      margin-left: rem(0);
+      float: left;
+    }
+  }
+}
+.footerMenu {
+  padding: rem(0);
+  height: rem(50);
+  @include breakpoint(medium){
+   margin-left: rem(20);
+  }
+  li{
+    width: rem(110);
+    display: inline;
+    margin: rem(0);
+    text-align: right;
+    @include breakpoint(large){
+      width: 21%;
+    }
+    @include breakpoint(medium){
+      width:19%;
+      text-align: center;
+    }
+    @include breakpoint(small){
+      text-align: center;
+    }
+  }
+}
+.facebook {
+  @include social(#19181F, 0.4s, #3C5A99, 0.4s);
+}
+.youtube {
+  @include social(#19181F, 0.4s, #ff0000, 0.4s);
+}
+.instagram{
+  @include social(#19181F, 0.4s, #2F6283, 0.4s);
+}
+.twitter{
+  @include social(#19181F, 0.4s, #00ACEE, 0.4s);
+}
+.facebook, .twitter, .youtube, .instagram{
+  @include breakpoint(small){
+    text-align: left;
+  }
+}
+#footerItem .mail{
+  float: right;
+  margin-right: rem(35);
+    text-align: right;
+  a{
+  color:#19181F;
+}
+}
+.socialNetwork:first-child{
+  display: none;
+  @include breakpoint(small){
+    display: inline;
+  }
+}
+.socialNetwork:last-child{
+  @include breakpoint(small){
+    display: none;
+  }
+}
+#footerItem .cartest{
+    @include breakpoint(medium){
+      width: 12%;
+    }
+  p {
+    padding-top: rem(5);
+  }
+}
